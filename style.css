@@ -11,20 +11,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/* custom scroll bar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
 
 /* all similar content styling codes */
 section{
@@ -142,7 +128,7 @@ section .title::after{
     bottom: 10px;
     text-align: center;
     line-height: 45px;
-    color: #fff;
+   
     z-index: 9999;
     font-size: 30px;
     border-radius: 6px;
@@ -150,16 +136,14 @@ section .title::after{
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s ease;
+   
 }
 .scroll-up-btn.show{
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
 }
-.scroll-up-btn:hover{
-    filter: brightness(90%);
-}
+
 
 
 /* home section styling */
@@ -167,8 +151,7 @@ section .title::after{
     display: flex;
     background: url("images/banner.jpg") no-repeat center;
     height: 100vh;
-    color: #fff;
-    min-height: 500px;
+		min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Calibri', sans-serif;
